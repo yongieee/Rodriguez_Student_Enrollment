@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; 
+    background-color: #f0f0f0; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffcc00; 
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5), 4px 4px 0 rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+    animation: flicker 1s infinite; 
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 50; }
+    50% { opacity: 0.6; }
+}
+
+
+h3 {
+    margin-bottom: 10px;
+    color: #ff6f00;
+}
+
+ol {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.input-fields {
+    flex: 1;
+    margin-right: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border: 5px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 3px solid #00bfff;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    background-color: #ffffff; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #ff6f00; 
+    box-shadow: 0 0 5px #ff6f00; 
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e65c00; 
+    transform: scale(1.02); 
+}
+
+.border1, .border2 {
+    border: 5px solid #00bfff; 
+    border-radius: 10px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 3px solid #00bfff; 
+    background-color: #f0f8ff; 
+}
+
+th {
+    background-color: #4a90e2; 
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); 
+}
+
+tbody tr {
+    background-color: #ffffff; 
+    transition: background-color 0.3s; 
+}
+
+tbody tr:hover {
+    background-color: #ffeb3b; 
+    transform: scale(1.01); 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e1f5fe; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+
+.stud-list {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.instructions {
+    background-color: #ffe0b2; 
+    border: 5px solid #ff6f00; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+    position: relative; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.instructions::before {
+    content: "🎮"; 
+    font-size: 2.5em; 
+    position: absolute;
+    left: 170px;
+    top: 5px;
+}
+
+.instructions h3 {
+    color: #d85a8b; 
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.instructions ol {
+    padding-left: 20px; 
+}
+
+.instructions li {
+    margin: 5px 0; 
+    color: #333; 
+    font-weight: bold;
+    position: relative; 
+}
+
+.interests {
+    background-color: #e1f5fe; 
+    border: 3px solid #00bfff; 
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.interests h4 {
+    color: #d85a8b; 
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4); 
+}
+
+.interests label {
+    display: flex;
+    align-items: center;
+    margin-bottom:5px;
+    cursor: pointer; 
+}
+
+.interests input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00bfff;
+    border-radius: 5px; 
+    background-color: #ffffff; 
+    margin-right: 10px; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.interests input[type="checkbox"]:checked {
+    background-color: #ff6f00; 
+    border: 2px solid #ff6f00;
+    transform: scale(1.1); 
+}
+
+.interests input[type="checkbox"]:checked + label {
+    color: #4caf50; 
+    font-weight: bold; 
+}
+
+
+.course {
+    background-color: #e1f5fe; 
+    border: 3px solid #00bfff;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.course label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; 
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00bfff; 
+    border-radius: 5px; 
+    background-color: #ffffff; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+select:focus {
+    border-color: #ff6f00; 
+    box-shadow: 0 0 5px #ff6f00; 
+}
+
+option {
+    background-color: #ffffff; 
+    color: #333; 
+}
+
+option:hover {
+    background-color: #ffeb3b;
+    color: #333; 
+}
+
+
+.sex {
+    background-color: #d1ebf3;
+    border: 3px solid #00bfff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.sex label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sex input[type="radio"] {
+    appearance: none; 
+    width: 25px;
+    height: 25px;
+    border: 3px solid #00bfff; 
+    border-radius: 50%;
+    margin-right: 10px; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sex input[type="radio"]:checked {
+    background-color: #ff6f00; 
+    border: 3px solid #ff6f00; 
+    transform: scale(1.1); 
+}
+
+.sex input[type="radio"]:checked + label {
+    color: #4caf50; 
+    font-weight: bold; 
+}
+
+.sex h4 {
+    color: #d85a8b; 
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.age-container {
+    background-color: #d1ebf3; 
+    border: 3px solid #00bfff;
+    border-radius: 12px; 
+    padding: 20px;
+    margin: 20px 0; 
+    text-align: center; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+}
+
+.age-label {
+    font-family: 'Press Start 2P', cursive;
+    color: #d85a8b; 
+    font-size: 1.2em; 
+    margin-bottom: 10px; 
+}
+
+.age-input {
+    background-color: #ffffff;
+    border: 3px solid #00bfff; 
+    border-radius: 5px; 
+    padding: 12px;
+    width: 60%; 
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 1.2em; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.age-input:focus {
+    border-color: #ff6f00;
+    box-shadow: 0 0 10px #ff6f00; 
+    outline: none; 
+}
+
+.age-input::placeholder {
+    color: #999; 
+    font-style: italic;
+}
+
+
+.input-container {
+    background-color: #d1ebf3;
+    border: 3px solid #00bfff; 
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0; 
+    text-align: center; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+}
+
+.input-label {
+    font-family: 'Press Start 2P', cursive;
+    color: #ff4081; 
+    font-size: 1em; 
+    margin-bottom: 10px; 
+}
+
+.input-field {
+    background-color: #ffffff; 
+    border: 3px solid #00bfff;
+    border-radius: 5px; 
+    padding: 12px;
+    width: 80%; 
+    font-family: Arial, sans-serif;
+    font-size: 1.2em; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.input-field:focus {
+    border-color: #ff6f00; 
+    box-shadow: 0 0 10px #ff6f00;
+    outline: none; 
+}
+
+.input-field::placeholder {
+    color: #999;
+    font-style: italic; 
+}

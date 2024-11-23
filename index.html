@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>STUDENT ENROLLMENT FORM</h1>
+
+    <div class="instructions">
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Fill in the form fields</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+    </div>
+    
+    <div class="main">
+        <div class="input-fields">
+            <form action="self" method="POST">
+                <fieldset class="border1">
+                    <legend><h3>Student Information</h3></legend>
+
+                    <div class="input-container">
+                        <label class="input-label" for="flname">Full Name:</label>
+                        <input type="text" class="input-field" id="flname" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="input-container">
+                        <label class="input-label" for="user_email">Email Address:</label>
+                        <input type="email" class="input-field" id="user_email" required placeholder="Enter your email">
+                    </div>
+                    
+
+                
+                    <div class="age-container">
+                        <label class="age-label" for="age">Age:</label>
+                        <input type="number" class="age-input" id="age" required placeholder="Enter your age">
+                    </div>   
+
+                   
+                    <div class="sex">
+                        <h4>Sex:</h4>
+                        <label>
+                            <input type="radio" id="male" name="sex" value="Male" required>
+                            Male
+                        </label>
+                        <label>
+                            <input type="radio" id="female" name="sex" value="Female" required>
+                            Female
+                        </label>
+                    </div>
+                
+                    <div class="course">
+                        <label for="course">Course:</label>
+                        <select id="course" name="course" required>
+                            <option value="BSIT">BS-Information Technology</option>
+                            <option value="BSSW">BS-Social Work</option>
+                            <option value="BSPA">BS-Public Administration</option>
+                            <option value="BSCS">BS-Computer Science</option>
+                        </select>
+                    </div>
+                    
+                    <br><br>
+
+    
+                    <div class="interests">
+                        <h4>Interests:</h4>
+                        <label>
+                            <input type="checkbox" id="anime" value="Anime">
+                            Anime
+                        </label>
+                        <label>
+                            <input type="checkbox" id="basketball" value="Basketball">
+                            Basketball
+                        </label>
+                        <label>
+                            <input type="checkbox" id="games" value="Games">
+                            Games
+                        </label>
+                        <label>
+                            <input type="checkbox" id="graphic-design" value="Graphic Design">
+                            Graphic Design
+                        </label>
+                    </div>
+                    
+
+
+                    <br><br>
+                    <button type="submit">Enroll Now</button>
+
+                </fieldset>
+            </form>
+        </div>
+        
+
+        <div class="stud-list">
+            <fieldset class="border2">
+                <legend><h3>Student List</h3></legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Age</th>
+                                <th>Sex</th>
+                                <th>Course</th>
+                                <th>Interests</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ryan</td>
+                                <td>ryan123@gmail.com</td>
+                                <td>29</td>
+                                <td>Male</td>
+                                <td>BSIT</td>
+                                <td>Anime</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Stephen</td>
+                                <td>stephen@gmail.com</td>
+                                <td>19</td>
+                                <td>Male</td>
+                                <td>BSSW</td>
+                                <td>Basketball</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ya Hua</td>
+                                <td>YaHua@gmail.com</td>
+                                <td>24</td>
+                                <td>Male</td>
+                                <td>BSPA</td>
+                                <td>Anime</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Ana</td>
+                                <td>Ana@gmail.com</td>
+                                <td>21</td>
+                                <td>Female</td>
+                                <td>BSCS</td>
+                                <td>Graphic Design, Anime,Games</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Geli</td>
+                                <td>geli@gmail.com</td>
+                                <td>26</td>
+                                <td>Female</td>
+                                <td>BSIT</td>
+                                <td>Graphic Design,Anime,Games</td>
+                            </tr>
+                                                        <tr>
+                                <td>4</td>
+                                <td>Gela</td>
+                                <td>gela@gmail.com</td>
+                                <td>21</td>
+                                <td>Female</td>
+                                <td>BSCS</td>
+                                <td>Anime,Games</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Jerwin</td>
+                                <td>Jerwin@gmail.com</td>
+                                <td>26</td>
+                                <td>Male</td>
+                                <td>BSIT</td>
+                                <td>Graphic Design</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Vyse</td>
+                                <td>Vyse.valorant@gmail.com</td>
+                                <td>21</td>
+                                <td>Female</td>
+                                <td>BSCS</td>
+                                <td>Graphic Design,Games</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Iso</td>
+                                <td>Iso@gmail.com</td>
+                                <td>26</td>
+                                <td>Male</td>
+                                <td>BSIT</td>
+                                <td>Graphic Design</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Pheonix</td>
+                                <td>Pheonix_white@gmail.com</td>
+                                <td>21</td>
+                                <td>Male</td>
+                                <td>BSCS</td>
+                                <td>Graphic Design,Anime,Basketball</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Brimstone</td>
+                                <td>Brim@gmail.com</td>
+                                <td>21</td>
+                                <td>Male</td>
+                                <td>BSCS</td>
+                                <td>Basketball</td>
+                            </tr>
+                    </table>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
